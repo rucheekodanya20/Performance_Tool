@@ -1,0 +1,45 @@
+
+.App-header {
+  background-color: #222;
+  height: 30px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+.dropdownContainer{
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.dropdownFile{
+  float: left;
+  width: 50%;
+}
+
+.dropdownList{
+  float: right;
+  width: 50%;
+  color: black;
+}
+
+.DropdownButton{
+  margin-top: 1%;
+  width:20%;
+  height: 30px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

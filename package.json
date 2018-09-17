@@ -1,0 +1,38 @@
+{
+  "name": "benchmark",
+  "version": "0.1.0",
+  "homepage": "https://github.wdf.sap.corp/i334576/Performance_Tool/gh-pages/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "client": "cd client && npm run start",
+    "server": "nodemon server.js",
+    "build": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "dev:server": "cd client && npm run build && cd .. && npm run start",
+    "start": "node server.js"
+    
+  },
+  "dependencies": {
+    "@types/chance": "^1.0.1",
+    "@types/react-select": "^2.0.2",
+    "@types/react-table": "^6.7.12",
+    "body-parser": "^1.18.3",
+    "chance": "^1.0.16",
+    "create-file": "^1.0.1",
+    "express": "^4.16.2",
+    "file-system": "^2.2.2",
+    "firebase": "^5.0.3",
+    "fs": "0.0.1-security",
+    "gh-pages": "^2.0.0",
+    "jsonfile": "^5.0.0",
+    "node-fs": "^0.1.7",
+    "node-ls": "0.0.4",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-dropdown": "^1.6.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1",
+    "webpack-merge": "^4.1.4"
+  }
+}
